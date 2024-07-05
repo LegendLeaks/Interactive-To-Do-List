@@ -1,3 +1,5 @@
+const items_list = []; // for storing to-do task entries
+
 function addList() {
     var title = document.getElementById("newListName");
     var list = document.getElementById("list1");
@@ -24,10 +26,29 @@ function addItem() {
     checkbox.type = 'checkbox';
     entry.appendChild(checkbox);
     entry.appendChild(document.createTextNode(input.value));
-    list.appendChild(entry);
 
+    list.appendChild(entry);
+    items_list.push(entry);
 
     input.value = '';
+}
+
+function clearChecked()
+{
+    /*
+    Removes all checkmarked to-do tasks
+    */
+    
+    for(var i = 0; i < items_list.length; i++) {
+
+        var item = items_list[i];
+        var checkbox = item.firstChild; // checkbox is first item
+
+        if(checkbox.checked) {
+            item.remove(); // remove the item from the DOM
+            items_list.splice(i, 1); // remove the item from the array
+        }
+    }
 }
 
 function search(element) {

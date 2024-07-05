@@ -31,6 +31,7 @@ body {
 }
 
 form .newListButton {
+    width: 14vw;
     padding: 14px 60px;
     font-size: 18px;
     margin-top: 20px;
@@ -40,6 +41,19 @@ form .newListButton {
     border-radius: 6px;
     margin-left: 5vw;
     margin-top: -4px;
+}
+
+.clearCheckedButton {
+    cursor: pointer;
+    width: 14vw;
+    height: 5vh;
+    min-width: 150px;
+    min-height: 35px;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.3);
+    font-size: 18px;
+    border-radius: 6px;
+
 }
 
 #menu ol li {
