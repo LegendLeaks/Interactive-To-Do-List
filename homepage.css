@@ -10,7 +10,7 @@ body {
 #menu {
     background-color: #401f3e;
     width: 25vw;
-    height: 100vh;
+    height: 101.7p0 vh;
     top: 0px;
     left: 0px;
     margin-top: -15px;
@@ -60,6 +60,11 @@ form .newListButton {
     color: #847e89;
 }
 
+#list ol li a {
+    text-decoration: none;
+    color: #847e89;
+}
+
 #list {
     background-color: #56494c;
     width: 40vw;
@@ -93,6 +98,13 @@ form .newListButton {
     margin-left: 10px;
 }
 
+.tasksHeader {
+    color: #9fa4a9;
+    font-size: 26px;
+    margin-bottom: -2px;
+    text-decoration: underline;
+    margin-left: 10px;
+}
 
 /* list ---------------------- */
 
