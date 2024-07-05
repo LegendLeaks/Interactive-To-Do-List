@@ -14,9 +14,10 @@
         <div id="container">
             <h2 class="header">To-Do List!</h2><br>
             <div class="newListDiv">
-                <form name="newList">
-                    <input type="text" name="newListName" placeholder="Enter List Name" required> <br>
-                    <button type="submit" class="newListButton" onclick="addList()">Create New List</button>
+                <form name="newList" onsubmit="return false">
+                    <input type="text" id="newListName" name="newListName" placeholder="Enter List Name" required> <br>
+                    <button type="submit" class="newListButton" onclick="addList()">Create New
+                        List</button>
                 </form>
                 <h2 class="listsHeader">Your Lists:</h2>
                 <ol id="list1">
@@ -30,15 +31,12 @@
         <div class="container">
             <h2 class="header2">To Do: {listname}</h2>
             <div class="newItemDiv">
-                <form name="itemlist" onkeydown="search(this)">
-                    <input type="text" name="newItemName" placeholder="To do: Eat" required> <br>
+                <form name="itemlist" onsubmit="return false" onkeydown="search(this)">
+                    <input type="text" id="newItemName" name="newItemName" placeholder="To do: Eat" required> <br>
                 </form>
             </div>
 
             <ol id="list2">
-                <li><input type="checkbox" id="box1" name="box1" value="box1">
-                    <label for="vehicle1"> Item 1</label><br>
-                </li>
                 <li>Milk</li>
             </ol>
 

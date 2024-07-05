@@ -1,3 +1,5 @@
+// https://jsfiddle.net/Gmyag/
+
 window.onload = function () {
     initDragElement();
     initResizeElement();

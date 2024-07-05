@@ -1,3 +1,11 @@
 body {
     background-color: #262626;
 }
+
+.loginButton {
+    left: 50%;
+    top: 50%;
+    color: aqua;
+    width: 10vw;
+    height: 5vh;
+}

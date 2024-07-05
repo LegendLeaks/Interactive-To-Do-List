@@ -55,6 +55,9 @@ form .newListButton {
 
 #list ol li {
     list-style: none;
+    font-size: 24px;
+    padding: 3px;
+    color: #847e89;
 }
 
 #list {
@@ -66,7 +69,7 @@ form .newListButton {
 }
 
 #info {
-    background-color: #050da3;
+    background-color: #9FA4A9;
     width: 35vw;
     height: 100vh;
 
@@ -102,4 +105,8 @@ form .newListButton {
     font-size: 20px;
     border-radius: 6px;
     margin-left: 18px;
+}
+
+.header2 {
+    margin-left: 7px;
 }
