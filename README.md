@@ -1,3 +1,3 @@
 # Interactive-To-Do-List
 
-## Co-Authored by [Vansh Anand](https://github.com/VanshAnand1)
+## Co-Authored by [@VanshAnand1](https://github.com/VanshAnand1)
