@@ -1,5 +1,105 @@
+/* menu ------------------------ */
+
+body {
+    background: #847e89;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+}
+
 #menu {
-    background-color: gray;
-    width: 240px;
+    background-color: #401f3e;
+    width: 25vw;
     height: 100vh;
+    top: 0px;
+    left: 0px;
+    margin-top: -15px;
+    float: left;
+}
+
+.newListDiv form input {
+    width: 20vw;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    color: white;
+    font-size: 18px;
+    border-radius: 6px;
+    margin-left: 18px;
+}
+
+form .newListButton {
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+    color: white;
+    background-color: rgb(103, 17, 179);
+    border-radius: 6px;
+    margin-left: 5vw;
+    margin-top: -4px;
+}
+
+#menu ol li {
+    font-size: 24px;
+    padding: 3px;
+    list-style: none;
+}
+
+#menu ol li a {
+    text-decoration: none;
+    color: #847e89;
+}
+
+#list ol li {
+    list-style: none;
+}
+
+#list {
+    background-color: #56494c;
+    width: 40vw;
+    height: 100vh;
+
+    float: left;
+}
+
+#info {
+    background-color: #050da3;
+    width: 35vw;
+    height: 100vh;
+
+    float: left;
+}
+
+.header {
+    color: #000000;
+    font-size: 40px;
+    margin-bottom: -2px;
+    margin-left: 10px;
+}
+
+.listsHeader {
+    color: #9fa4a9;
+    font-size: 26px;
+    margin-bottom: -2px;
+    text-decoration: underline;
+    margin-left: 10px;
+}
+
+
+/* list ---------------------- */
+
+.newItemDiv form input {
+    width: 20vw;
+    border: 0;
+    outline: none;
+    background: rgba(44, 44, 44, 0.5);
+    padding: 15px;
+    margin: 15px 0;
+    color: white;
+    font-size: 20px;
+    border-radius: 6px;
+    margin-left: 18px;
 }

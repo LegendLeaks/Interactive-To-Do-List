@@ -2,6 +2,7 @@
 <html lang="en">
 <link rel="stylesheet" type="text/css" href="homepage.css" />
 <script src="homepage.js"></script>
+<script src="resize.js"></script>
 <script src="https://kit.fontawesome.com/df7dbf8a66.js" crossorigin="anonymous"></script>
 
 <head>
@@ -11,16 +12,43 @@
 <body>
     <div id="menu">
         <div id="container">
-            <img class="toDoLogo" src="images/toDoLogo.png">
-            <form name="newList">
-                <input type="text" name="newListName" placeholder="List Name" required> <br>
-                <button type="submit" class="newListButton" onclick="newList()">Create New List</button>
-            </form>
-            <ul>
-                <!-- NEED TO GATHER INPUT FROM ABOVE FORM AND USE AS TITLES FOR THE LISTS -->
-                <li><a href="#">List 1</a></li>
-                <li><a href="#">List 2</a></li>
-            </ul>
+            <h2 class="header">To-Do List!</h2><br>
+            <div class="newListDiv">
+                <form name="newList">
+                    <input type="text" name="newListName" placeholder="Enter List Name" required> <br>
+                    <button type="submit" class="newListButton" onclick="addList()">Create New List</button>
+                </form>
+                <h2 class="listsHeader">Your Lists:</h2>
+                <ol id="list1">
+                    <li><a href="#">List 1</a></li>
+                </ol>
+            </div>
+        </div>
+    </div>
+
+    <div id="list">
+        <div class="container">
+            <h2 class="header2">To Do: {listname}</h2>
+            <div class="newItemDiv">
+                <form name="itemlist" onkeydown="search(this)">
+                    <input type="text" name="newItemName" placeholder="To do: Eat" required> <br>
+                </form>
+            </div>
+
+            <ol id="list2">
+                <li><input type="checkbox" id="box1" name="box1" value="box1">
+                    <label for="vehicle1"> Item 1</label><br>
+                </li>
+                <li>Milk</li>
+            </ol>
+
+
+        </div>
+    </div>
+
+    <div id="info">
+        <div class="container">
+            <h2 class="header3">{todo item name}</h2>
         </div>
     </div>
 
