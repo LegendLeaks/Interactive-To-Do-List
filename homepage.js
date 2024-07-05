@@ -40,13 +40,13 @@ function clearChecked()
     */
     
     for(var i = 0; i < items_list.length; i++) {
-
         var item = items_list[i];
         var checkbox = item.firstChild; // checkbox is first item
 
         if(checkbox.checked) {
-            item.remove(); // remove the item from the DOM
+            item.remove(); // remove the item
             items_list.splice(i, 1); // remove the item from the array
+            i--;
         }
     }
 }
